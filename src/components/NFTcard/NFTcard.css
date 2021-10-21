@@ -1,0 +1,215 @@
+
+
+.body-card{
+    display: flex;
+    flex-direction: column;
+   
+    width: 450px;
+    height: 500px;
+    border: 1px solid rgba(125, 152, 163, 0.6);
+    border-radius: 16px;
+    margin: 10px;
+    font-family: Nunito;
+}
+
+.top-card{
+    display: flex;
+   justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+.right-card-icon-set{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+    gap:10px
+}
+.card-image-container{
+    padding-left: 8px;
+    padding-right: 8px;
+    background-image:url(../../assets/card-image-1.png);
+    background-position: center;
+    background-clip: content-box;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-card{
+    
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content:space-between;
+
+    align-items: flex-start;
+
+
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 13px;
+
+}
+
+.right-bottom-card-side{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    align-items: flex-end;
+}
+
+.left-bottom-card-side{
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    
+}
+
+.completed-artist-info-container{
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: flex-start;
+}
+
+.completed-sells-container{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.sells-info-container{
+    display: flex;
+
+
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.artist-info-plus-NFTtitle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.artist-info-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.leftside-text-about-sells{
+    font-size: 16px;
+    color: #7D98A3;
+
+ 
+}
+.leftside-text-about-sells a{
+  text-decoration: none;
+    
+ 
+}
+.rightside-text-about-sells{
+   
+    font-size: 16px;
+    color: #7D98A3;
+    text-align: right;
+}
+
+.left-card-icon{
+    
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+.right-card-icon-heart{
+ padding-top: 14px;
+ padding-bottom: 14px;
+
+}
+
+.right-card-icon-save{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+   }
+
+.card-image{
+    border-radius: 16px;
+}
+
+.gallery-card-icon{
+    position:relative;
+ 
+}
+
+.volume-card-icon{
+   align-self: flex-start;
+   
+}
+
+.artist-profile-image{
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+    margin-bottom: 10px;
+
+}
+
+.title-NFT{
+    font-size: 22px;
+    color: #1B84C0;
+
+}
+
+.username-artist{
+    font-size: 16px;
+    color: #3E5E75;
+}
+
+.crown-icon{
+
+   padding-left: 5px;
+}
+
+.etherium-icon{
+padding-right: 6px;
+}
+
+.etherium-number{
+    font-size: 18px;
+    text-align: right;
+    color: #000000;
+}
+
+.card-hearts-number {
+    font-size: 14px;
+    text-align: right;
+    color: #3E5E75;
+   padding-right: -5px;
+}
+
+.container-without-underline-link{
+    
+}

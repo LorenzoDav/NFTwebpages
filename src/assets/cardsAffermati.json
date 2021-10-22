@@ -1,0 +1,42 @@
+
+
+[
+    {
+        "heartsNumber": 491,
+        "userProfileIcon": "user-profile-image-1.png",
+        "usernameArtist": "Artista-1",
+        "NFTtitle": "Canzone-1",
+        "usernameSeller": "Venditore-1",
+        "ethereumPrice": "1,5438",
+        "ethereumLastOffer": "1,5438",
+        "cardImage": "card-image-1.png",
+        "isFeat": true,
+        "usernameArtistFeat": "Artista-feat-1"
+    },
+    {
+        "heartsNumber": 352,
+        "userProfileIcon": "user-profile-image-2.png",
+        "usernameArtist": "Artista-2",
+        "NFTtitle": "Canzone-2",
+        "usernameSeller": "Venditore-2",
+        "ethereumPrice": "4,6312",
+        "ethereumLastOffer": "4,5438",
+        "cardImage": "card-image-2.png",
+        "isFeat": false,
+        "usernameArtistFeat": "Artista-feat-2"
+
+    },
+    {
+        "heartsNumber": 1283,
+        "userProfileIcon": "user-profile-image-3.png",
+        "usernameArtist": "Artista-3",
+        "NFTtitle": "Canzone-3",
+        "usernameSeller": "Venditore-3",
+        "ethereumPrice": "0,4362",
+        "ethereumLastOffer": "0,4362",
+        "cardImage": "card-image-3.png",
+        "isFeat": false,
+        "usernameArtistFeat": "Artista-feat-3"
+
+    }
+]

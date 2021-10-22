@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Nunito);
 
 .body-card{
     display: flex;
@@ -10,6 +10,7 @@
     border-radius: 16px;
     margin: 10px;
     font-family: Nunito;
+  
 }
 
 .top-card{
@@ -29,29 +30,18 @@
 .card-image-container{
     padding-left: 8px;
     padding-right: 8px;
-    background-image:url(../../assets/card-image-1.png);
-    background-position: center;
-    background-clip: content-box;
     height: 330px;
     background-repeat: no-repeat;
-    background-size: contain;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  
 }
 
 .bottom-card{
-    
     display: flex;
-
     flex-direction: row;
-
     justify-content:space-between;
-
     align-items: flex-start;
-
-
-
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 13px;
@@ -59,33 +49,20 @@
 }
 
 .right-bottom-card-side{
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: flex-end;
-
     align-items: flex-end;
 }
 
 .left-bottom-card-side{
-
     display: flex;
-
-    flex-direction: column;
-
-
-
-    
+    flex-direction: column; 
 }
 
 .completed-artist-info-container{
-
     display: flex;
-
     justify-content: flex-start;
-
     align-items: flex-start;
 }
 
@@ -119,54 +96,50 @@
 }
 
 .leftside-text-about-sells{
-    font-size: 16px;
+    font-size: 14px;
     color: #7D98A3;
-
- 
 }
+
 .leftside-text-about-sells a{
   text-decoration: none;
-    
- 
 }
+
 .rightside-text-about-sells{
-   
-    font-size: 16px;
+    font-size: 14px;
     color: #7D98A3;
     text-align: right;
 }
 
 .left-card-icon{
-    
     justify-self: flex-start;
     margin-left: 20px;
 }
 
 .right-card-icon-heart{
  padding-top: 14px;
- padding-bottom: 14px;
+ padding-bottom: 15px;
 
 }
 
-.right-card-icon-save{
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 14px;
-    padding-right: 14px;
-   }
 
 .card-image{
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .gallery-card-icon{
     position:relative;
- 
+    bottom: 375px;
+    width: 30px;
+    left: 10px;
 }
 
 .volume-card-icon{
+
+    position: relative;
+    bottom: 50px;
    align-self: flex-start;
-   
+  
 }
 
 .artist-profile-image{
@@ -174,17 +147,16 @@
     height: 40px;
     margin-right: 13px;
     margin-bottom: 10px;
-
+    border-radius: 50%;
 }
 
 .title-NFT{
-    font-size: 22px;
+    font-size: 16px;
     color: #1B84C0;
-
 }
 
 .username-artist{
-    font-size: 16px;
+    font-size: 14px;
     color: #3E5E75;
 }
 
@@ -198,18 +170,48 @@ padding-right: 6px;
 }
 
 .etherium-number{
-    font-size: 18px;
+    font-size: 16px;
     text-align: right;
     color: #000000;
 }
 
 .card-hearts-number {
-    font-size: 14px;
+    font-size: 12px;
     text-align: right;
     color: #3E5E75;
    padding-right: -5px;
 }
 
-.container-without-underline-link{
-    
+.username-seller{
+    color:#3E5E75;
 }
+
+@media screen and (max-width: 470px) {
+    .body-card {
+     width:400px;
+    
+    }
+    .card-image{
+       height: 380px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .body-card {
+     width:350px;
+  
+    }
+    .card-image{
+        height: 380px;
+     }
+  }
+
+  @media screen and (max-width: 370px) {
+    .body-card {
+     width:300px;
+     
+    }
+    .card-image{
+        height: 430px;
+     }
+  }

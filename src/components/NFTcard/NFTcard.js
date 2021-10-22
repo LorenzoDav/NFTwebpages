@@ -5,22 +5,26 @@ import galleryIcon from '../../assets/gallery-icon.png';
 import ethereumIcon from '../../assets/ethereum-logo.png';
 import volumeIcon from '../../assets/volume-icon.png';
 import threePointsIcon from '../../assets/three-points-icon.png';
-import user1ProfileImage from '../../assets/user-profile-image.png';
 import crownIcon from '../../assets/crown-icon.png';
+import fullHeartIcon from '../../assets/full-heart-icon.png';
 
-function NFTcard(){
-
+function NFTcard(props) {
     return(
-
+        
         <div className="body-card">
-
+        {   /*
+            (props.ciao === false) ? 
+                <span>ciao</span> : 
+                <span>fottiti</span>
+            */
+        }
             <div className="top-card">
 
                 <img src={threePointsIcon} className="left-card-icon"/>
 
                 <div className="right-card-icon-set">
 
-                    <h3 className="card-hearts-number">492</h3>
+                    <h3 className="card-hearts-number">{props.heartsNumber}</h3>
 
                     <img src={heartIcon} className="right-card-icon-heart" />
 
@@ -32,9 +36,11 @@ function NFTcard(){
 
             <div className="card-image-container">
 
-                <img scr={galleryIcon} className="gallery-card-icon"/>
+                <img src={props.cardImage} className="card-image"/>
 
-                <img src={volumeIcon}className="volume-card-icon"/>
+                <img src={volumeIcon} className="volume-card-icon"/>
+
+                <img src={galleryIcon} className="gallery-card-icon"/>
 
             </div>
 
@@ -44,25 +50,32 @@ function NFTcard(){
 
                     <div className="completed-artist-info-container">                                            
 
-                        <img src={user1ProfileImage} className="artist-profile-image"/>
+                        <img src={props.userProfileIcon} className="artist-profile-image"/>
 
                         <div className="artist-info-plus-NFTtitle-container" >                                   
 
                             <div className="artist-info-container">     
-
-                                <span className="username-artist">username_artista</span>
+                                
+                                <span className="username-artist">{props.usernameArtist}</span>
 
                                 <img src={crownIcon} className="crown-icon"/>
 
                             </div>
 
-                            <span className="title-NFT">Titolo NFT</span>
+                            <span className="title-NFT">{props.NFTtitle}</span>
 
                         </div>
 
                     </div>
-                        
-                    <span className="leftside-text-about-sells" className="container-without-underline-link">venduto da <a href="link-artista" className="special-link">username</a></span>
+
+                                    {
+                                    (props.isFeat ) ?
+                                    <span className="leftside-text-about-sells" >feat <span className="username-artist">{props.usernameArtistFeat}</span></span>
+                                    : ''
+                                    }       
+                                    
+                                        
+                    <span className="leftside-text-about-sells" >venduto da  <span className="username-seller">{props.usernameSeller}</span></span>
 
                 </div>
                 
@@ -74,9 +87,9 @@ function NFTcard(){
 
                         <div className= "sells-info-container">
 
-                            <img src={ethereumIcon } className="etherium-icon"/>
+                            <img src={ethereumIcon} className="etherium-icon"/>
 
-                            <span className="etherium-number">1,4553</span>
+                            <span className="etherium-number">{props.ethereumPrice}</span>
 
                         </div>
 
@@ -88,9 +101,9 @@ function NFTcard(){
 
                         <div className= "sells-info-container">
                         
-                            <img src={ethereumIcon } className="etherium-icon"/>
+                            <img src={ethereumIcon} className="etherium-icon"/>
 
-                            <span className="etherium-number">1,4553</span>
+                            <span className="etherium-number">{props.ethereumLastOffer}</span>
 
                         </div>
 

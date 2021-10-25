@@ -1,0 +1,24 @@
+.NFTbutton{
+    padding: 12px 24px;
+    width: 210px;
+    height: 50px;
+    background: #25A9E0;
+    border-radius: 16px;
+    border:none;
+    display:flex;
+    justify-content:center;
+   
+    
+}
+.button-icon{
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    padding-left: 10px;
+    
+}
+.button-text{
+    font-size: 17px;
+    font-family: Nunito;
+    color:white;
+}

@@ -1,14 +1,20 @@
 import './NFTcardList.css';
 import NFTcard from '../NFTcard/NFTcard';
-import arrowIcon from '../../assets/arrow-icon.png'
-
+import Button from '../Button/Button';
 
 function NFTcardList(props){
-    const cards = props.artists.map(artist => 
+
+    const artists = [...props.artists];
+
+    if ((window.innerWidth > 767) && ( window.innerWidth < 1023)){
+        artists.pop();
+    }
+
+    const cards = artists.map((artist, i) => 
         (
-            < NFTcard className="card" 
+            <NFTcard className="card" 
                 heartsNumber={artist.heartsNumber}
-                userProfileIcon={require("../../assets/"+artist.userProfileIcon).default}
+                userProfileIcon={require(`../../assets/${artist.userProfileIcon}`).default}
                 usernameArtist={artist.usernameArtist}
                 NFTtitle={artist.NFTtitle}
                 usernameSeller={artist.usernameSeller}
@@ -17,8 +23,20 @@ function NFTcardList(props){
                 cardImage={require("../../assets/"+artist.cardImage).default}
                 isFeat={artist.isFeat}
                 usernameArtistFeat={artist.usernameArtistFeat}
+                key={i}
             />
         )   
+    )
+
+    const buttons = props.listButton.map((buttonList, i) =>
+        (
+            <Button
+            buttonText={buttonList.buttonText}
+            buttonIcon={require("../../assets/"+buttonList.buttonIcon).default}
+            buttonLink={buttonList.buttonLink}
+            key={i}
+            />
+        )
     )
 return (
     <div className="completed-card-list">
@@ -32,64 +50,20 @@ return (
                 <img src={props.categoryNameIcon} className="category-name-icon"/>
 
             </div>
+                {buttons}
 
-            <button href={props.buttonLink} className="learn-more-button">Scopri di più <img src={arrowIcon} classname="button-icon"/></button>
-
-        </div>
+             </div>
 
         <div className="card-list">
 
             {cards}
-{/* 
-            < NFTcard className="card" 
-                 heartsNumber={491}
-                 userProfileIcon={userProfileImage1}
-                 usernameArtist={"Domenico Bini"}
-                 NFTtitle={"UEEEEEEEE"}
-                 usernameSeller={"Mario Rossi"}
-                 ethereumPrice={"1,5438"}
-                 ethereumLastOffer={"1,5438"}
-                 cardImage={cardImage1}
-                 isFeat={true}
-                 usernameArtistFeat={"Ciro"}
-            />
-        
-            < NFTcard className="card"
-                heartsNumber={354}
-                userProfileIcon={userProfileImage}
-                usernameArtist={"Domenico Bini"}
-                NFTtitle={"UEEEEEEEE"}
-                usernameSeller={"Mario Rossi"}
-                ethereumPrice={"1,5438"}
-                ethereumLastOffer={"1,5438"}
-                cardImage={cardImage1}
-                isFeat={true}
-                usernameArtistFeat={"Ciro"}
-            />
-
-            < NFTcard className="card"
-                heartsNumber={212}
-                userProfileIcon={userProfileImage}
-                usernameArtist={"Domenico Bini"}
-                NFTtitle={"UEEEEEEEE"}
-                usernameSeller={"Mario Rossi"}
-                ethereumPrice={"1,5438"}
-                ethereumLastOffer={"1,5438"}
-                cardImage={cardImage1}
-                isFeat={true}
-                usernameArtistFeat={"Ciro"}
-            /> */}
 
         </div>
 
 
     </div>
 
-
 )
-
-
 
 }
 export default NFTcardList;
-

@@ -1,14 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 
 .body-card{
     display: flex;
     flex-direction: column;
-   
+   background-color: white;
     width: 450px;
     height: 500px;
     border: 1px solid rgba(125, 152, 163, 0.6);
     border-radius: 16px;
-    margin: 10px;
     font-family: Nunito;
   
 }
@@ -186,32 +185,29 @@ padding-right: 6px;
     color:#3E5E75;
 }
 
-@media screen and (max-width: 470px) {
-    .body-card {
-     width:400px;
+@media screen and (max-width: 1023px) and (min-width: 768px) {
     
-    }
-    .card-image{
-       height: 380px;
-    }
+  .body-card{
+      width: 345px;
+      height: 500px;
   }
-
-  @media screen and (max-width: 420px) {
-    .body-card {
-     width:350px;
+  .card-image-container{
+      height: 260px ;
+  }
+    
   
-    }
-    .card-image{
-        height: 380px;
-     }
+    
   }
-
-  @media screen and (max-width: 370px) {
+  @media screen and (max-width: 767px)  {
+    
     .body-card {
-     width:300px;
-     
+        width:335px;
+        height: 455px;
+
     }
-    .card-image{
-        height: 430px;
-     }
+    .card-image-container{
+        height: 250px;
+    }
+  
+    
   }

@@ -1,14 +1,11 @@
 import './NFTcardList.css';
 import NFTcard from '../NFTcard/NFTcard';
 import Button from '../Button/Button';
-
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 function NFTcardList(props){
 
     const artists = [...props.artists];
-
-    if ((window.innerWidth > 767) && ( window.innerWidth < 1023)){
-        artists.pop();
-    }
 
     const cards = artists.map((artist, i) => 
         (
@@ -27,7 +24,8 @@ function NFTcardList(props){
             />
         )   
     )
-
+    
+     
     const buttons = props.listButton.map((buttonList, i) =>
         (
             <Button
@@ -50,16 +48,24 @@ return (
                 <img src={props.categoryNameIcon} className="category-name-icon"/>
 
             </div>
+
+            <div className="web-tablet-button">
+
                 {buttons}
 
-             </div>
-
-        <div className="card-list">
-
-            {cards}
+            </div>
 
         </div>
 
+        <div className="card-list">
+        {cards}
+        </div>
+    
+        <div className="mobile-button">
+
+            {buttons}
+
+        </div>
 
     </div>
 

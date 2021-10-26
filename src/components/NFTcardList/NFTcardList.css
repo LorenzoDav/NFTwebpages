@@ -20,14 +20,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 10px;
 
 }
 
 .card-list{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 33px;
+    padding-bottom: 20px;
     width: 100%;
+    overflow: scroll;
 }
 
 .category-name{
@@ -44,6 +46,17 @@ color: #25A9E0;
 .button-icon{
     height: 20px;
     width: 20px;
+}
+
+.mobile-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   
+}
+.web-tablet-button{
+    visibility: visible;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -69,5 +82,21 @@ color: #25A9E0;
         align-items:center;
         justify-content: space-evenly;
     }
+    .mobile-button{
+        display: flex;
+    }
+    .web-tablet-button{
+        visibility: hidden;
+    }
+    .header-card-list{
+        display: inline;
+        margin-bottom: -35px;
+        padding-bottom: 0px;
+        padding-left: 10%;
+    }
+    .category-name{
+        font-size: 18px;
+    }
+
     
   }

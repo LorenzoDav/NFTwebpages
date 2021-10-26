@@ -9,7 +9,7 @@
     border: 1px solid rgba(125, 152, 163, 0.6);
     border-radius: 16px;
     font-family: Nunito;
-  
+    margin: 6px;
 }
 
 .top-card{
@@ -187,27 +187,42 @@ padding-right: 6px;
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     
-  .body-card{
-      width: 345px;
-      height: 500px;
-  }
-  .card-image-container{
-      height: 260px ;
-  }
-    
-  
-    
-  }
-  @media screen and (max-width: 767px)  {
-    
     .body-card {
-        width:335px;
-        height: 455px;
+        width:32%;
+        height: 32%;
 
     }
     .card-image-container{
         height: 250px;
     }
-  
+    
+    .card-image{
+        height: 120%;
+    }
+    
+    .bottom-card{
+        padding-top: 60px;
+    }
+    
+  }
+  @media screen and (max-width: 767px)  {
+    
+    .body-card {
+        width:80%;
+        height: 90%;
+
+    }
+    .card-image-container{
+        height: 250px;
+    }
+    
+    .card-image{
+        height: 120%;
+    }
+    
+    .bottom-card{
+        padding-top: 60px;
+    }
+
     
   }

@@ -5,6 +5,7 @@ import rocketIcon from './assets/rocket-icon.png';
 import affermati from './assets/cardsAffermati.json';
 import emergenti from './assets/cardsEmergenti.json';
 import bottonsParts from './assets/buttonsParts.json';
+
 import './App.css';
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
         listButton={bottonsParts}
       />
 
-       {/* <NFTcardList 
+       { <NFTcardList 
         categoryName={"Artisti emergenti"}
         categoryNameIcon={rocketIcon}
         artists={emergenti}
         listButton={bottonsParts}
         key={1}
-      /> */}
+      /> }
    
     </div>
     

@@ -36,6 +36,8 @@ function NFTcardList(props){
             />
         )
     )
+
+    
 return (
     <div className="completed-card-list">
 

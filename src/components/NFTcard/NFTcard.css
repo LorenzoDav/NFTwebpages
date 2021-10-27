@@ -8,8 +8,8 @@
     height: 500px;
     border: 1px solid rgba(125, 152, 163, 0.6);
     border-radius: 16px;
-    font-family: Nunito;
-    margin: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .top-card{
@@ -188,7 +188,7 @@ padding-right: 6px;
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     
     .body-card {
-        width:32%;
+        width:35%;
         height: 32%;
 
     }
@@ -208,7 +208,7 @@ padding-right: 6px;
   @media screen and (max-width: 767px)  {
     
     .body-card {
-        width:80%;
+        width:90%;
         height: 90%;
 
     }
@@ -217,11 +217,11 @@ padding-right: 6px;
     }
     
     .card-image{
-        height: 120%;
+        height: 150%;
     }
     
     .bottom-card{
-        padding-top: 60px;
+        padding-top: 95px;
     }
 
     

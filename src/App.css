@@ -9,14 +9,22 @@
     background-position: center;
     background-size: cover;
 }
-.landing-component-container{
-    background-image: url("./assets/landing-component-background.png");
+.initial-section-container{
+    height :100%;
+    background-image: url("./assets/initial-section-background.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
     .card-list-container {
         background-image: url("./assets/card-list-background-mobile.png");
+        background-size: auto;
+    }
+    .initial-section-container{
+        background-image: url("./assets/initial-section-background-mobile.png");
         background-size: auto;
     }
 }
@@ -37,6 +45,10 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
    
+}
+.initial-section-container{
+    background-image: url("./assets/initial-section-background-mobile.png");
+    background-size: auto;
 }
 }
 

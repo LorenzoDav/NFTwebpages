@@ -3,6 +3,14 @@
         "buttonText":"Scopri di più",
         "buttonIcon":"arrow-icon.png",
         "buttonLink":"#"
+    },
+    {
+        "buttonText":"Registrati",
+        "buttonLink":"#"
+    },
+    {
+        "buttonText":"Accedi",
+        "buttonLink":"#"
     }
 
 

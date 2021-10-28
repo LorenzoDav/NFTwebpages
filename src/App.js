@@ -5,14 +5,13 @@ import rocketIcon from './assets/rocket-icon.png';
 import affermati from './assets/cardsAffermati.json';
 import emergenti from './assets/cardsEmergenti.json';
 import bottonsParts from './assets/buttonsParts.json';
-import LandingComponent from './components/LandingComponent/LandingComponent';
+import InitialSection from './components/InitialSection/InitialSection';
 import './App.css';
-
 
 function App() {
   return (
-    <div className='landing-component-container'>
-      <LandingComponent/>
+    <div className='initial-section-container'>
+      <InitialSection/>
       { /*
       <div className="card-list-container">
 

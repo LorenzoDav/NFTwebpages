@@ -1,8 +1,8 @@
 import './NFTcardList.css';
 import NFTcard from '../NFTcard/NFTcard';
 import Button from '../Button/Button';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import arrowIcon from '../../assets/arrow-icon.png';
+
 function NFTcardList(props){
 
     const artists = [...props.artists];
@@ -25,17 +25,7 @@ function NFTcardList(props){
         )   
     )
     
-     
-    const buttons = props.listButton.map((buttonList, i) =>
-        (
-            <Button
-            buttonText={buttonList.buttonText}
-            buttonIcon={require("../../assets/"+buttonList.buttonIcon).default}
-            buttonLink={buttonList.buttonLink}
-            key={i}
-            />
-        )
-    )
+ 
 
     
 return (
@@ -53,7 +43,13 @@ return (
 
             <div className="web-tablet-button">
 
-                {buttons}
+                
+        <Button
+            buttonText={"Scopri di più"}
+            buttonIcon={arrowIcon}
+            buttonLink={"#"}
+        
+            />
 
             </div>
 
@@ -65,7 +61,13 @@ return (
     
         <div className="mobile-button">
 
-            {buttons}
+        <Button
+            buttonText={"Scopri di più"}
+            buttonIcon={arrowIcon}
+            buttonLink={"#"}
+        
+            />
+
 
         </div>
 
